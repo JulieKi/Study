@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Блог</title>
+</head>
+<body>
+<form enctype="multipart/form-data" method="post" action="/blog/action.php">
+	<p>Название статьи:</p>
+	<input name="title"/><br>
+	<p>Добавить изображение по желаю:</p>
+	<input type="file" name="image"/><br>
+	<p>Текст статьи:</p>
+	<textarea name="body"></textarea><br>
+	<p>Автор:</p>
+	<input name="author"/><br><br>
+	<input type="submit"/><br><br>
+</form>
+<form action="/blog/articles.php">
+<input type="submit" value="Перейти ко всем статьям"/>
+</form>
+</body>
+</html>
